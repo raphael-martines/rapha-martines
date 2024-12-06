@@ -1,0 +1,43 @@
+.chart {
+  width: 70vh;
+  margin: 0 auto;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.label {
+  width: 18vh;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.progress-container {
+  flex: 1;
+  height: 20px;
+  background-color: #0c0c0c;
+  border: 1px solid rgb(94, 94, 94);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress {
+  width: 0;
+  height: 20px;
+  background-color: #c7e600;
+  transition: width 6s ease-in-out, opacity 2s ease-in-out;
+  opacity: 0;
+}
+
+.progress.visible {
+  opacity: 1;
+}
+
+.value {
+  margin-left: 10px;
+  font-weight: bold;
+}

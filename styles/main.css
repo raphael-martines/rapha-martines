@@ -1,0 +1,216 @@
+/* -----------------------------------------
+   ESTILOS DE TEMA
+----------------------------------------- */
+
+:root {
+  --corTexto: white;
+  --corDestaque: #c8e600;
+  --bgLinha: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgb(83, 83, 83),
+      rgba(0, 0, 0, 0)
+    )
+    1;
+}
+
+/* -----------------------------------------
+   GLOBAL
+----------------------------------------- */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #0c0c0c;
+}
+
+hr {
+  border-top: 1px solid;
+  border-image: var(--bgLinha);
+  width: 60vh;
+  margin: 5vh 0 5vh 0;
+}
+
+.blocos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 70vh;
+  margin: 5vh 0 5vh 0;
+  color: white;
+}
+
+.mini-text {
+  font-size: 1.8vh;
+  color: var(--corTexto);
+}
+
+/* -----------------------------------------
+   HEADER
+----------------------------------------- */
+
+.scroll-indicator {
+  opacity: 0;
+  width: 100%;
+  height: 50px;
+  color: var(--corTexto);
+  position: fixed;
+  text-align: center;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.59);
+  box-shadow: 0 4px 30px #0c0c0ca6;
+  backdrop-filter: blur(7.2px);
+  -webkit-backdrop-filter: blur(7.2px);
+  border-bottom: 1px solid;
+  border-image: var(--bgLinha);
+  transition: opacity 0.5s ease-in-out;
+}
+
+.scroll-indicator p {
+  margin-top: 1.5vh;
+}
+
+.top {
+  width: 100%;
+  border-image: var(--bordas);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--corTexto);
+}
+
+.top img {
+  height: 14vh;
+  width: 14vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin: 30px 0 60px 0;
+}
+
+.top h2 {
+  margin-top: 10px;
+}
+
+.hello {
+  color: var(--corTexto);
+  font-size: 4vh;
+}
+
+/* -----------------------------------------
+   ESTILOS DE PARAGRÁFO
+----------------------------------------- */
+
+.texto_curto {
+  color: var(--corTexto);
+  font-size: 2.5vh;
+  line-height: 3vh;
+}
+
+.texto_corrido {
+  font-size: 2vh;
+  color: var(--corTexto);
+  line-height: 3vh;
+  text-align: left;
+}
+
+/* -----------------------------------------
+  TABELA DISPONÍVEL PARA TRABALHO
+----------------------------------------- */
+
+.tabela tr {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.tabela th {
+  display: flex;
+  height: 6vh;
+  justify-content: center;
+  align-items: center;
+  color: var(--corTexto);
+  padding: 2vh;
+}
+
+.tabela a {
+  color: var(--corTexto);
+}
+
+.tabela a:hover {
+  color: var(--corDestaque);
+}
+
+/* -----------------------------------------
+   BLOCO FORMAÇÕES
+----------------------------------------- */
+
+.caixa {
+  width: 70vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.caixa div {
+  margin-bottom: 2vh;
+}
+
+.caixa i {
+  font-size: 5vh;
+  margin-right: 2vh;
+}
+
+/* -----------------------------------------
+   FOOTER (Conteúdo do rodapé)
+----------------------------------------- */
+
+.footer {
+  color: var(--corTexto);
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  bottom: 0;
+  border-top: 1px solid;
+  border-image: var(--bgLinha);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.59);
+  box-shadow: 0 4px 30px #0c0c0ca6;
+  backdrop-filter: blur(7.2px);
+  -webkit-backdrop-filter: blur(7.2px);
+}
+
+.footer div {
+  display: flex;
+  padding: 0 1vh;
+  border-right: 1px solid rgb(255, 255, 255);
+}
+
+.footer div:last-child {
+  border-right: 0;
+}
+
+.footer i {
+  margin: 0 1vh;
+}
+
+.footer div a i:hover {
+  color: var(--corDestaque);
+}
+
+/* -----------------------------------------
+   MEDIA QUERY PARA TELAS PEQUENAS - futuro
+----------------------------------------- */
+
+/* @media (max-width: 768px) {
+.div{}
+  } */
