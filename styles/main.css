@@ -18,6 +18,8 @@
    GLOBAL
 ----------------------------------------- */
 body {
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -141,27 +143,19 @@ hr {
   TABELA DISPONÍVEL PARA TRABALHO
 ----------------------------------------- */
 
-.tabela tr {
+.blocos ol {
   display: flex;
   flex-direction: row;
   border-top: 1px solid rgba(255, 255, 255, 0.14);
   border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 3vh;
 }
 
-.tabela th {
-  display: flex;
-  height: 6vh;
-  justify-content: center;
-  align-items: center;
-  color: var(--corTexto);
-  padding: 2vh;
+.blocos li {
+  padding-right: 2vh;
 }
 
-.tabela a {
-  color: var(--corTexto);
-}
-
-.tabela a:hover {
+.blocos li a:hover {
   color: var(--corDestaque);
 }
 
@@ -187,7 +181,7 @@ hr {
 
 .fim {
   width: 100%;
-  height: 30vh;
+  height: 23vh;
   border-image: var(--bordas);
   display: flex;
   flex-direction: column;
@@ -238,6 +232,14 @@ hr {
    MEDIA QUERY PARA TELAS PEQUENAS - futuro
 ----------------------------------------- */
 
-/* @media (max-width: 768px) {
-.div{}
-  } */
+@media screen and (max-width: 768px) {
+  .blocos {
+    width: 40vh;
+  }
+  .chart {
+    width: 40vh;
+  }
+  .caixa {
+    width: 40vh;
+  }
+}

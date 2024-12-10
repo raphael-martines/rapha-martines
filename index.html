@@ -7,8 +7,8 @@
     <title>Raphael Martines</title>
     <!-- Estilos -->
     <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/graphics.css" />
+    <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/fonts.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
@@ -18,7 +18,7 @@
       src="https://kit.fontawesome.com/393ca07055.js"
       crossorigin="anonymous"
     ></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/script.js" defer></script>
   </head>
 
   <!-- CABEÇALHO OCULTO -->
@@ -41,7 +41,7 @@
     <!-- CABEÇALHO -->
 
     <header class="top">
-      <img src="Images/logo-Rapha.png" />
+      <img src="Images/logo-Rapha.png" alt="Logotipo Raphael" />
       <h1 class="hello inter-uniquifier">Olá — Sou o Raphael.</h1>
       <h2 class="hello inter-uniquifier-destaque">Designer Sênior</h2>
       <h2 class="hello inter-uniquifier">Estudante de ADS.</h2>
@@ -65,40 +65,39 @@
     <!-- MEDIAS SOCIAIS -->
 
     <section class="blocos">
-      <table class="tabela inter-uniquifier texto_corrido">
-        <tr>
-          <th>
-            <span>Disponível para trabalho</span>
-            <i
-              class="fa-regular fa-thumbs-up fa-bounce"
-              style="margin-left: 20px; color: var(--corDestaque)"
-            ></i>
-          </th>
-          <th style="padding-left: 10px; color: rgba(255, 255, 255, 0.233)">
-            |
-          </th>
-          <th>
-            <a href="https://www.linkedin.com/in/raphael-martines-812b7889/"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-          </th>
-          <th>
-            <a href="https://www.instagram.com/rapha.martines"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
-          </th>
-          <th>
-            <a href="https://www.facebook.com/raphaelmdepaula"
-              ><i class="fa-brands fa-facebook"></i
-            ></a>
-          </th>
-          <th>
-            <a href="https://www.behance.net/raphael_martines"
-              ><i class="fa-brands fa-behance"></i
-            ></a>
-          </th>
-        </tr>
-      </table>
+      <ol class="inter-uniquifier texto_corrido">
+        <li>
+          <span>Disponível para trabalho</span>
+          <i
+            class="fa-regular fa-thumbs-up fa-bounce"
+            style="margin-left: 20px; color: var(--corDestaque)"
+          ></i>
+        </li>
+        <li style="padding-left: 10px; color: rgba(255, 255, 255, 0.233)">|</li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/raphael-martines-812b7889/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/rapha.martines" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/raphaelmdepaula" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.behance.net/raphael_martines" target="_blank">
+            <i class="fa-brands fa-behance"></i>
+          </a>
+        </li>
+      </ol>
     </section>
 
     <!-- -------------------- -->
@@ -230,28 +229,28 @@
         <div class="bar">
           <span class="label">Liderança</span>
           <div class="progress-container">
-            <div class="progress" data-value="60"></div>
+            <div class="progress" data-value="50"></div>
           </div>
         </div>
 
         <div class="bar">
           <span class="label">Organização</span>
           <div class="progress-container">
-            <div class="progress" data-value="95"></div>
+            <div class="progress" data-value="90"></div>
           </div>
         </div>
 
         <div class="bar">
           <span class="label">Gerenciamento de tempo</span>
           <div class="progress-container">
-            <div class="progress" data-value="70"></div>
+            <div class="progress" data-value="50"></div>
           </div>
         </div>
 
         <div class="bar">
           <span class="label">Pensamento crítico</span>
           <div class="progress-container">
-            <div class="progress" data-value="60"></div>
+            <div class="progress" data-value="65"></div>
           </div>
         </div>
 
@@ -418,17 +417,20 @@
       >
     </section>
     <div class="animatedDiv"><hr /></div>
-    <!-- -------------------- -->
-    <!-- FOOTER  -->
 
     <section class="fim animatedDiv">
       <h2 class="hello inter-uniquifier-destaque">Obrigado pela visita!</h2>
       <h2 class="hello inter-uniquifier">Aguardo seu contato!</h2>
     </section>
 
+    <!-- -------------------- -->
+    <!-- FOOTER  -->
+
     <footer class="footer">
       <div>
-        <a href="#"><i class="mini-text fa-brands fa-whatsapp"></i></a>
+        <a href="https://wa.me/5519983357001" target="_blank"
+          ><i class="mini-text fa-brands fa-whatsapp"></i
+        ></a>
         <h3 class="mini-text inter-uniquifier">(19)98335-7001</h3>
       </div>
       <div>
